@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw                      # < source name
+    schema: main                  # < schema (or database) name in DuckDB (DuckDB default is 'main')
+    tables:
+      - name: raw_customers
+        description: Raw customer data loaded from CSV
+      - name: raw_orders
+        description: Orders as received from the sales system
+      - name: raw_payments
+        description: Payment transactions from the bank export
